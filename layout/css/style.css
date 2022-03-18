@@ -1,0 +1,843 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f3f3f3;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.ar {
+    font-family: 'Scheherazade', serif;
+    font-weight: bold;
+    direction: rtl
+}
+
+a.read-more {
+    color: #2196F3;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Start Index Styles */
+
+.header,
+#new-header {
+    position: relative;
+    display: block;
+    color: #fff;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/1.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.header .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.58);
+}
+
+.header #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.header canvas.particles-js-canvas-el {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.header .nav {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    background-color: rgba(0, 0, 0, 0.68);
+}
+
+.header .nav .logo {
+    float: left;
+    width: 10%;
+    height: 100%;
+    padding: 0 30px;
+    text-align: center;
+}
+
+.header .nav .logo img,
+.header .nav-collapse .logo img {
+    width: 140px;
+}
+
+.header .nav .menu {
+    width: 90%;
+    height: 100%;
+    float: right;
+}
+
+.header .nav ul {
+    list-style: none;
+    float: right;
+    padding: 0 20px;
+}
+
+.header .nav ul li {
+    color: #fff;
+    float: right;
+    padding: 0 15px;
+    font-size: 30px;
+}
+
+.header .nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.header h1,
+.header h2 {
+    position: absolute;
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+.header h1 {
+    top: 30%;
+    font-size: 60px;
+    transform: translateY(-20%);
+}
+
+.header h2 {
+    top: 30%;
+    font-size: 60px;
+    font-weight: bold;
+    transform: translateY(-50%);
+}
+
+.page-h1 {
+    position: absolute;
+    width: 60%;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.header .buttons {
+    position: absolute;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 60px;
+    bottom: 20%;
+    text-align: center;
+}
+
+.header .buttons button,
+#new-header input.submit-form {
+    font-size: 35px;
+    color: #fff;
+    width: 26%;
+    height: 100%;
+    padding: 5px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    background: #008eff;
+    transition: all 0.3s ease-in-out
+}
+
+.header .buttons button:hover,
+#new-header input.submit-form:hover {
+    background: #006ec7
+}
+
+#new-header input.submit-form {
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*      ==========================         =======================    */
+
+.nav-collapse {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.68);
+}
+
+.header .nav-collapse .logo {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.header .nav-collapse .bars {
+    float: left;
+    width: 50%;
+    height: 100%;
+    padding: 10px 30px;
+}
+
+.bars-cont {
+    float: right;
+    cursor: pointer;
+}
+
+.nav-collapse .bars .bar1,
+.nav-collapse .bars .bar2,
+.nav-collapse .bars .bar3 {
+    width: 35px;
+    height: 3px;
+    background-color: #fff;
+    margin: 8px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.header .nav-collapse .menu-collapse {
+    float: left;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.4s linear;
+    background: rgba(0, 0, 0, 0.83)
+}
+
+.header .nav-collapse .menu-collapse ul li {
+    padding: 5px;
+    font-size: 25px;
+    transition: all 0.3s ease
+}
+
+.header .nav-collapse .menu-collapse ul li:hover {
+    background: #008eff;
+}
+
+.header .nav-collapse .menu-collapse ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.active-menu {
+    height: 220px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* End Index Styles */
+
+
+/* Start New.html Styles */
+
+#new-header {
+    height: 150vh;
+}
+
+#new-header h2 {
+    top: 12%;
+    font-size: 40px;
+    font-weight: 100;
+    transform: translateY(-20%);
+}
+
+#new-header .form {
+    position: absolute;
+    direction: rtl;
+    display: block;
+    width: 50%;
+    height: auto;
+    left: 50%;
+    top: 60%;
+    padding: 20px 15px;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.51);
+}
+
+#new-header .form .select-post {
+    font-size: 16px;
+    width: 70%;
+    margin: 8px 0;
+    padding: 3px 5px;
+    border: 2px solid #fff;
+    background: rgb(193, 193, 193);
+    transition: all 0.3s ease;
+}
+
+#new-header .form .select-post option {
+    color: #fff;
+    font-size: 20px;
+    background: #545454;
+}
+
+#new-header input.form form {
+    width: 100%;
+    height: 100%;
+}
+
+#new-header .form .alert-error {
+    padding: 10px;
+    width: 100%;
+    margin: 10px auto;
+    color: #FFF;
+    background-color: rgba(202, 126, 126, 0.63);
+}
+
+#new-header .form form input.form-input {
+    color: #000;
+    font-size: 18px;
+    width: 70%;
+    margin: 8px 0;
+    padding: 8px 5px;
+    border: 2px solid #fff;
+    background: rgb(193, 193, 193);
+    transition: all 0.3s ease;
+}
+
+#new-header .form form textarea.form-input {
+    font-size: 16px;
+    width: 100%;
+    height: 250px;
+    resize: none;
+    padding: 8px 5px;
+    border: 2px solid #fff;
+    background: rgb(193, 193, 193);
+    transition: all 0.3s ease;
+}
+
+#new-header .form form input.form-input:focus,
+#new-header .form form textarea.form-input:focus {
+    background: #fff
+}
+
+#new-header input.submit-form {
+    margin: 8px 0;
+    width: 100%
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  image upload  */
+
+.setup-picture {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.setup-picture .picture {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    cursor: pointer;
+    margin: 10px auto;
+    padding: 0 10px;
+    background: #2b2b2b;
+    border: 2px solid #fff;
+    transition: all 0.3s ease
+}
+
+.setup-picture .picture input[type="file"] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    opacity: 0;
+}
+
+.setup-picture .picture i.fa.fa-camera {
+    float: left;
+    font-size: 35px;
+    padding: 10px 0;
+}
+
+.setup-picture .picture h3 {
+    font-size: 30px;
+    margin: 6px;
+}
+
+.setup-picture button {
+    display: block;
+    color: #fff;
+    width: 70%;
+    height: auto;
+    padding: 10px;
+    font-size: 22px;
+    margin: 0 auto;
+    cursor: pointer;
+    border: 2px solid #fff;
+    background: rgb(43, 43, 43);
+    transition: all 0.3s ease
+}
+
+.setup-picture .picture:hover,
+.setup-picture button:hover {
+    background: #0e0e0e;
+}
+
+.setup-picture img#uploaded {
+    width: 150px;
+    height: 100px;
+    display: none;
+    margin: 5px auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* End New.html Styles */
+
+
+/* Start Posts.html Styles */
+
+.posts {
+    position: relative;
+    top: -450px;
+    left: 50%;
+    width: 70%;
+    height: auto;
+    direction: rtl;
+    text-align: right;
+    padding: 15px 25px;
+    margin-bottom: 50px;
+    background: #ffffff;
+    border-radius: 8px;
+    transform: translate(-50%);
+    box-shadow: 0 5px 90px 0 #505050;
+}
+
+.posts .post {
+    position: inherit;
+    height: 350px;
+    padding: 5px 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 30px #b5b5b5
+}
+
+.posts .post .post-txt h1,
+.view-post-txt h1 {
+    height: 45px;
+    display: block;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.posts .post .post-txt span,
+.view-post-txt span {
+    display: block;
+    padding: 5px 0;
+    font-size: 14px;
+}
+
+.posts span i.fa {
+    color: #2196F3;
+    padding-left: 10px;
+}
+
+.posts .post .post-txt p,
+.view-post-txt p {
+    padding: 15px 10px;
+    word-wrap: break-word;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+.posts .post .post-txt,
+.posts .post .post-img {
+    position: inherit;
+    height: 100%;
+    float: right;
+}
+
+.posts .post .post-txt {
+    width: 70%
+}
+
+.posts .post .post-img {
+    width: 30%;
+    padding: 10px 0
+}
+
+.posts .post .post-img img {
+    width: 100%;
+}
+
+.alert-success {
+    background-color: rgba(46, 204, 113, .5);
+}
+
+.view-post-txt {
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+}
+
+.view-post-img img {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* End Posts.html Styles */
+
+
+/* Start login / Signup Forms Styles */
+
+h2.form-h1 {
+    top: 30%;
+    font-family: sans-serif;
+}
+
+.main-form {
+    position: absolute;
+    direction: rtl;
+    display: block;
+    width: 30%;
+    height: auto;
+    left: 50%;
+    top: 60%;
+    padding: 20px 15px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.51);
+}
+
+.main-form input {
+    color: #000;
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px 5px;
+    font-size: 18px;
+    border: 2px solid #9e9e9e;
+    background: #e6e6e6;
+    transition: all 0.3s ease;
+}
+
+.main-form input:focus {
+    background: #fff;
+}
+
+.main-form button {
+    font-size: 22px;
+    color: #fff;
+    width: 100%;
+    padding: 5px;
+    margin: 0;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    background: #008eff;
+    transition: all 0.3s ease-in-out;
+}
+
+.main-form button:hover {
+    background: #0074d0;
+}
+
+.main-form p {
+    text-align: center;
+    margin: 0;
+    margin-top: 15px;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.main-form p a {
+    text-decoration: none;
+    color: #0063b1
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* End login / Signup Forms Styles */
+
+
+/* Start Responsive Media Queries */
+
+@media (min-width: 1200px) {
+    /*    No Need For It  */
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .header .buttons button {
+        width: 30%
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .header h1 {
+        font-size: 50px
+    }
+
+    .header h2 {
+        font-size: 45px
+    }
+    .header .buttons button {
+        width: 35%
+    }
+    .posts {
+        width: 90%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .header .nav {
+        display: none !important;
+    }
+
+    .header .nav-collapse {
+        display: block !important;
+    }
+
+    .header .buttons button {
+        width: 46%
+    }
+
+    /* New.html Styles */
+    new-header .form {
+        width: 80%
+    }
+    .posts {
+        width: 100%;
+        border-radius: 0
+    }
+}
+
+@media (max-width: 575px) {
+    .header .nav {
+        display: none !important;
+    }
+
+    .header .nav-collapse {
+        display: block !important;
+    }
+    .header .buttons button {
+        display: inline-block;
+        margin: 10px auto;
+        width: 60%;
+    }
+
+    /* New.html Styles */
+    #new-header .form {
+        width: 80%
+    }
+    #new-header .form input.form-input {
+        width: 100% !important
+    }
+
+    .setup-picture .picture,
+    .setup-picture button {
+        width: 100%;
+    }
+    .posts {
+        width: 100%;
+        border-radius: 0
+    }
+    .posts .post {
+        height: 550px;
+    }
+    .posts .post .post-txt {
+        width: 100%;
+        height: 50%;
+    }
+    .posts .post .post-img {
+        width: 100%;
+        height: 50%;
+        padding: 10px 0;
+    }
+    .posts .post .post-img img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+@media (max-width: 415px) {
+    .header .nav {
+        display: none !important;
+    }
+
+    .header .nav-collapse {
+        display: block !important;
+    }
+    .header h1 {
+        font-size: 45px
+    }
+
+    .header h2 {
+        font-size: 45px
+    }
+    .header .buttons button {
+        display: inline-block;
+        margin: 10px auto;
+        width: 80%;
+    }
+
+    /* New.html Styles */
+    #new-header h2 {
+        font-size: 40px !important;
+    }
+
+    #new-header .form {
+        width: 90%
+    }
+
+    #new-header .form input.form-input {
+        width: 100% !important
+    }
+
+    .posts {
+        width: 100%;
+        border-radius: 0
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* End Responsive Media Queries */
